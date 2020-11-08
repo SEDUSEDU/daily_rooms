@@ -1,8 +1,11 @@
-function App() {
+import './App.css';
+import Contacts from './Componets/Contacts/contacts';
+
+const App = (props) => {
   return (
-    <div className="App">
-      <p>Daily Rooms</p>
-    </div>
+    <Contacts />
+    
+    
   );
 }
 
