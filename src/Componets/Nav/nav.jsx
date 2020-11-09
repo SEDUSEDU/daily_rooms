@@ -5,15 +5,15 @@ import c from './nav.module.css';
 const Nav = (props) => {
     return (
         <div className={c.nav}>
-            <div className={c.nav_logo}>
-                <img src="images/logo.png" alt="логотип"/>
+            <div className={c.nav_menu}>
+            <img className={c.logo_menu} src="./images/logo.png" alt="логотип"/>
+            <div className={c.bar_menu}>
+                <div className={c.line}></div>
+                <div className={c.line}></div>
+                <div className={c.line}></div>
+            </div>
             </div>
         </div>
-
-       
-
-
-
 
     )
 } 
