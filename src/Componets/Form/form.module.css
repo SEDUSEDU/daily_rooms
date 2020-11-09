@@ -1,16 +1,41 @@
-form {
+.form_wrapper {
+    position: relative;
+    z-index: 2;
+}
+.form {
+    position: absolute;
+    margin-top: -43vh;
+    margin-left: 30vw;
+}
+form {    
+    
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgb(75, 91, 145);
+    padding: 5vh 8vw;
+    
 }
 
 input,
-textarea,
-.input_btn {
-    width: 30vw;
+.input_message {
+    width: 25vw;
     height: 5vh;
     background-color: rgb(75, 91, 145);
     border: none;
     border-bottom: 2px solid antiquewhite;
-    
+    margin-top: 3vh;
+    outline: none;
+}
+
+.input_btn {
+    width: 8vw;
+    height: 5vh;
+    background-color: antiquewhite;
+    border: none;
+    outline: none;
+    margin-top: 5vh;
+    margin-left: 17vw;
+
 }

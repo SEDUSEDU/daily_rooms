@@ -1,4 +1,4 @@
-nav {
+.nav {
     background-color: antiquewhite;
 }
 .nav_menu {
@@ -6,6 +6,10 @@ nav {
     display: flex;  
     justify-content: space-between;
     padding: 1vh 1vw;
+}
+.logo_menu {
+    width: 30px;
+    height: 30px;
 }
 
 .bar_menu {

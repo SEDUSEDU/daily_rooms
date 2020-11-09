@@ -1,4 +1,3 @@
-import { render } from '@testing-library/react';
 import React from 'react';
 import c from './contacts.module.css';
 import Nav from '../Nav/nav'
@@ -10,13 +9,18 @@ const Contacts = (props) => {
         <div className={c.contacts}>
             <Nav />
             <section className={c.section_big}>
-                <img className={c.section_big_img} src="https://via.placeholder.com/850x744" alt=""/>
+                <img className={c.section_big_img} src="images/big_contacts.jpg" alt="img"/>
             <h3>Контакты</h3>
             </section>
             <Form />
-            <section class="section_mini">
-                <img class="section_big_mini" src="https://via.placeholder.com/650x540" alt=""/>
+            <section className={c.section_mini}>
+                <img className={c.section_mini_img} src="images/mini_contacts.jpg" alt="img"/>
             </section>
+            <div className={c.chat}>
+                <div className={c.title}>Отправьте нам сообщение</div>
+                <textarea type="text" className="chat_message" id=""></textarea>
+
+            </div>
             <Footer />
   
         </div>
