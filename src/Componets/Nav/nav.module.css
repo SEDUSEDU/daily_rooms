@@ -12,6 +12,31 @@
     height: 30px;
 }
 
+.nav_adnin {
+    display: flex;
+    margin-left: 80vw;
+}
+
+.admin,
+.user {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    align-self: center;
+    margin-left: 1vw;
+    cursor: pointer;
+}
+.admin {
+    background-color: rgb(75, 91, 145);
+}
+.user {
+    background-color: rgb(122, 125, 139);
+}
+
 .bar_menu {
     display: flex;
     flex-direction: column;
