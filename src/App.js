@@ -8,6 +8,7 @@ const App = (props) => {
     <BrowserRouter>
       <Contacts />
     </BrowserRouter>
+
   );
 }
 
