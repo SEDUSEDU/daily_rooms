@@ -17,22 +17,13 @@ h3 {
     padding-top: 14vh;
     position: absolute;
 }
-.section_mini {
-    height: 60vh;
-    position: relative;   
-}
-.section_mini_img {
-    position: absolute;
-    margin-left: 60vw;
-    margin-top: 2vh;
-}
 .box_chat {
     width: 20vw;
     height: 50vh;
     border: 2px solid rgb(75, 91, 145);
     border-radius: 10px;
     position: absolute;
-    top: 85vh;
+    top: 35vh;
     left: 3vh;
 
 }
@@ -70,6 +61,8 @@ h3 {
 .box_chat_bottom {
     background-color: rgb(250, 247, 247);
     border-radius: 10px;
+    display: flex;
+    align-items: center;
 }
 
 .chat_message {
@@ -78,8 +71,22 @@ h3 {
     font-size: 16px;
     border: none;
     outline: none;
-    margin: 10%;
-   }
+    margin: 11% 5%;
+    background-color: rgb(250, 247, 247);
+}
+
+
+.btn_enter {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    color: rgb(75, 91, 145);
+    font-size: 16px;
+    font-weight: bold;
+    background-color: antiquewhite;
+    
+}
 
  
 

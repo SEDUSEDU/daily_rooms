@@ -24,6 +24,7 @@ const Contacts = (props) => {
                 <div className={c.box_chat_middle}></div>
                 <div className={c.box_chat_bottom}>
                     <textarea type="text" className={c.chat_message} placeholder="Введите сообщение..."></textarea>
+                    <button className={c.btn_enter}>^</button>
                     
                 </div>             
                 
