@@ -8,15 +8,15 @@ const App = (props) => {
 
   return (
     <BrowserRouter>
-    <Route exact path="/">
-      <Contacts />
-      </Route> 
-    <Route exact path="/admin" component={Contacts_admin}/>
-          
-      <Route exact path="/user" component={Contacts_user}/>
-     
-       
-      
+      <Route exact path="/">
+        <Contacts state={props.state} setTextUser={props.setTextUser} />
+      </Route>
+      <Route exact path="/admin"><Contacts_admin state={props.state} setTextAdmin={props.setTextAdmin}/> </Route>
+
+      <Route exact path="/user" ><Contacts_user state={props.state} /> </Route>
+
+
+
     </BrowserRouter>
 
   );
