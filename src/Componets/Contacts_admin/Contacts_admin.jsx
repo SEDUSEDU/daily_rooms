@@ -1,6 +1,7 @@
 import React from "react";
 import c from "./Contacts_admin.module.css";
 import Nav from "../Nav/nav";
+import Chat from "../Chat/chat";
 
 const Contacts_admin = (props) => {
     const textAdmin = React.createRef();
@@ -26,7 +27,7 @@ const Contacts_admin = (props) => {
           <div className={c.title}>Отправьте нам сообщение</div>
           <button className={c.btn_close}>x</button>
         </div>
-        <div className={c.box_chat_middle}>{props.state.messeges[0][0]}</div>
+        <Chat state={props.state} />
         <div className={c.box_chat_bottom}>
           <textarea
           ref={textAdmin}

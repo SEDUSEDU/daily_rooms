@@ -3,6 +3,7 @@ import c from "./contacts.module.css";
 import Nav from "../Nav/nav";
 import Form from "../Form/form";
 import Footer from "../Footer/footer";
+import Chat from "../Chat/chat";
 
 const Contacts = (props) => {
   const textUser = React.createRef();
@@ -35,7 +36,7 @@ const Contacts = (props) => {
           <div className={c.title}>Отправьте нам сообщение</div>
           <button className={c.btn_close}>x</button>
         </div>
-        <div className={c.box_chat_middle}>{props.state.messeges[1][0]}</div>
+      <Chat state={props.state} />
         <div className={c.box_chat_bottom}>
           <textarea
             ref={textUser}
