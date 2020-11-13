@@ -1,25 +1,24 @@
-let rerender = () => {};
+const store = {
+    _state: { messeges: [['Здравствуйте'], []] },
+    getState() {
+        return this._state
+    },
 
-const state = {
-    messeges: [['dsf'] ,[]]
+    rerender() { },
+    subscribe(observer) {
+        this.rerender = observer;
+    },
 
+    setTextUser(textUser) {
+        this._state.messeges[1].push(textUser);
+        this._state.messeges[0].push('');
+        this.rerender();
+    },
+
+    setTextAdmin(textAdmin) {
+        this._state.messeges[0].push(textAdmin);
+        this._state.messeges[1].push('');
+        this.rerender();
+    }
 }
-
-export let setTextUser = (textUser) => {
-    state.messeges[1].push(textUser);
-    state.messeges[0].push('');
-    console.log(state.messeges);
-    rerender();
-}
-
-export let setTextAdmin = (textAdmin) => {
-    state.messeges[0].push(textAdmin);
-    state.messeges[1].push('');
-    rerender();
-}
-
-export const subscribe = (observer) => {
-    rerender = observer;
-}
-
-export default state;
+export default store;

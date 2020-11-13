@@ -4,3 +4,14 @@
     background-color: rgb(250, 247, 247);
     border-bottom: 2px solid rgb(75, 91, 145);
 }
+
+.messge_admin {
+    width: 10vh;
+    color: green;
+     
+}
+
+.messge_user {
+    width: 10vh;
+    color: hotpink;
+}
