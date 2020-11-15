@@ -2,8 +2,6 @@ import React from "react";
 import c from "./chat.module.css";
 
 const Chat = (props) => {
-
-  console.log(props);
   const getChat = props.state.getMessages.messages[0].map((value, index) => {
     return (
       <div key={value + index}>

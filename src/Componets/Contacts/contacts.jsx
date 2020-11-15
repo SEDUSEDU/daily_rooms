@@ -5,7 +5,6 @@ import Form from "../Form/form";
 import Footer from "../Footer/footer";
 import Chat from "../Chat/chat";
 const Contacts = (props) => {
-  
   return (
     <div className={c.contacts}>
       <Nav />

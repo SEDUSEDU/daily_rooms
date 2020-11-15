@@ -12,11 +12,8 @@ const App = (props) => {
         <Contacts_container store={props.store} />
       </Route>
       <Route exact path="/admin"><Contacts_admin_conteiner store={props.store} /> </Route>
-
       <Route exact path="/user" ><Contacts_user state={props.store.getState()} /> </Route>
-
     </BrowserRouter>
-
   );
 }
 

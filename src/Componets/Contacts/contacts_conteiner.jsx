@@ -11,7 +11,11 @@ const Contacts_container = (props) => {
 
   return (
     <div>
-      <Contacts state={props.store.getState()} setTextUser={setTextUser} textUser={textUser}/>      
+      <Contacts
+        state={props.store.getState()}
+        setTextUser={setTextUser}
+        textUser={textUser}
+      />
     </div>
   );
 };
