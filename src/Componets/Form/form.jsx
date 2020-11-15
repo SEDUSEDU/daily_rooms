@@ -6,7 +6,7 @@ const Form = (props) => {
     <div className={c.form_wrapper}>
       <div className={c.form}>
         <form  action="contact-form.php" method="post">
-        <label for="name">Имя:</label>
+       
           <input
             type="text"
             name="name"
@@ -14,13 +14,13 @@ const Form = (props) => {
             placeholder="Имя"
             required 
           />
-          <label for="company">Компания:</label>
+         
           <input
             type="text"
             name="company"
             className={c.input_company}
           />
-          <label for="email">Email:</label>
+          
           <input
             type="email"
             name="email"
@@ -28,7 +28,7 @@ const Form = (props) => {
             placeholder="Е-mail"
             required 
           />
-          <label for="tel">Телефон:</label>
+          
           <input
             type="tel"
             name="tel"
@@ -36,7 +36,7 @@ const Form = (props) => {
             placeholder="Введите номер телефона"
             required 
           />
-          <label for="message">Текст сообщения:</label>
+          
           <textarea
             type="text"
             name="message"
