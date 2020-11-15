@@ -6,36 +6,44 @@ const Form = (props) => {
     <div className={c.form_wrapper}>
       <div className={c.form}>
         <form  action="contact-form.php" method="post">
+        <label for="name">Имя:</label>
           <input
             type="text"
             name="name"
             className={c.input_name}
             placeholder="Имя"
+            required 
           />
+          <label for="company">Компания:</label>
           <input
             type="text"
-            name="name"
+            name="company"
             className={c.input_company}
-            placeholder="Компания"
           />
+          <label for="email">Email:</label>
           <input
-            type="text"
-            name="name"
+            type="email"
+            name="email"
             className={c.input_mail}
             placeholder="Е-mail"
+            required 
           />
+          <label for="tel">Телефон:</label>
           <input
-            type="text"
-            name="name"
+            type="tel"
+            name="tel"
             className={c.input_phone}
-            placeholder="Телефон"
+            placeholder="Введите номер телефона"
+            required 
           />
+          <label for="message">Текст сообщения:</label>
           <textarea
             type="text"
-            name="name"
+            name="message"
             className={c.input_message}
             placeholder="Сообщение"
           ></textarea>
+           <input name="bezspama" type="text" style="display:none" value="" />
           <button className={c.input_btn}>Submit</button>
         </form>
         <div className={c.contacts_text}>
