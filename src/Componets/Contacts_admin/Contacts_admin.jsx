@@ -4,12 +4,7 @@ import Nav from "../Nav/nav";
 import Chat from "../Chat/chat";
 
 const Contacts_admin = (props) => {
-    const textAdmin = React.createRef();
-
-  const setTextAdmin = () => {
-    props.setTextAdmin(textAdmin.current.value);
-  };
-
+  console.log(props);
   return (
     <div className={c.contacts}>
       <Nav />
@@ -30,12 +25,14 @@ const Contacts_admin = (props) => {
         <Chat state={props.state} />
         <div className={c.box_chat_bottom}>
           <textarea
-          ref={textAdmin}
+            ref={props.textAdmin}
             type="text"
             className={c.chat_message}
             placeholder="Введите сообщение..."
           ></textarea>
-          <button onClick={setTextAdmin} className={c.btn_enter}>^</button>
+          <button onClick={props.setTextAdmin} className={c.btn_enter}>
+            ^
+          </button>
         </div>
       </div>
     </div>

@@ -4,14 +4,8 @@ import Nav from "../Nav/nav";
 import Form from "../Form/form";
 import Footer from "../Footer/footer";
 import Chat from "../Chat/chat";
-
 const Contacts = (props) => {
-  const textUser = React.createRef();
-
-  const setTextUser = () => {
-    props.setTextUser(textUser.current.value);
-  };
-
+  
   return (
     <div className={c.contacts}>
       <Nav />
@@ -36,14 +30,14 @@ const Contacts = (props) => {
           <div className={c.title}>Отправьте нам сообщение</div>
           <button className={c.btn_close}>x</button>
         </div>
-      <Chat state={props.state} />
+        <Chat state={props.state} />
         <div className={c.box_chat_bottom}>
           <textarea
-            ref={textUser}
+            ref={props.textUser}
             className={c.chat_message}
             placeholder="Введите сообщение..."
           ></textarea>
-          <button onClick={setTextUser} className={c.btn_enter}>
+          <button onClick={props.setTextUser} className={c.btn_enter}>
             ^
           </button>
         </div>

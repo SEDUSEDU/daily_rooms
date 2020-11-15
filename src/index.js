@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import store from './Redux/state'
+import store from './Redux/Redax_store'
 
 let rerender = () => {
   ReactDOM.render(
     <React.StrictMode>
-      <App state={store.getState()} setTextUser={store.setTextUser.bind(store)} setTextAdmin={store.setTextAdmin.bind(store)} />
+      <App store={store} />
     </React.StrictMode>,
     document.getElementById('root')
   );
